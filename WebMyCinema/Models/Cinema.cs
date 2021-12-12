@@ -1,12 +1,28 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 public class Cinema
 {
-    public string CinemaName { public get; set; }
-    public string CinemaAddress { public get; set; }
-    public string AboutTheCinema { public get; set; }
-    public string CinemaPhoneNumber { public get; set; }
-    //фото кинотеатра
+    [Required]
+    [Key]
+    public int CimenaId { get; set; };
+
+    [Required]
+    [StringLength(20)]
+    public string CinemaName { get; set; }
+
+    [Required]
+    public string CinemaAddress { get; set; }
+
+    public string AboutTheCinema { get; set; }
+
+    [Phone]//Переделать 
+    public string CinemaPhoneNumber { get; set; }
+
+    [Url]
+    public string CinemaPhotography { get; set; }//фото кинотеатра
+
+
 
     public void AddNewCinema() //добавить кинотеатр
     { }

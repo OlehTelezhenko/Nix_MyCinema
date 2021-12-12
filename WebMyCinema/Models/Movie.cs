@@ -13,5 +13,4 @@ public class Movie
     //Обложка кино
 
 
-
 }
