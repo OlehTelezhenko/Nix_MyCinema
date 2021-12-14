@@ -2,32 +2,32 @@
 {
     public class Genre
     {
-        public bool Arthouse = false;//Артхаус
-        public bool Biography = false;//Биография
-        public bool Militants = false;//Боевики
-        public bool WesternFilm = false;//Вестерн
-        public bool Military = false;//Военные
-        public bool Detectives = false;//Детективы
-        public bool ForKids = false;//Для детей
-        public bool Documentary = false;//Документальные
-        public bool Dramas = false;//Драмы
-        public bool Foreign = false;//Зарубежные
-        public bool Historical = false;//Исторические
-        public bool Catastrophes = false;//Катастрофы
-        public bool Comedy = false;//Комедии
-        public bool Crime = false;//Криминал
-        public bool Melodrama = false;//Мелодрамы
-        public bool Mystical = false;//Мистические
-        public bool Musical = false;//Музыкальные
-        public bool ByComics = false;//По комиксам
-        public bool Adventures = false;//Приключения
-        public bool Russians = false;//Русские
-        public bool Ukrainian = false;//Украинские 
-        public bool Family = false;//Семейные
-        public bool Soviet = false;//Советские
-        public bool Sport = false;//Спорт
-        public bool Thrillers = false;//Триллеры
-        public bool Horror = false;//Ужасы
-        public bool Fantasy = false;//Фэнтези
+        public bool Arthouse { get; set; } //Артхаус
+        public bool Biography { get; set; } //Биография
+        public bool Militants { get; set; } //Боевики
+        public bool WesternFilm { get; set; } //Вестерн
+        public bool Military { get; set; } //Военные
+        public bool Detectives { get; set; } //Детективы
+        public bool ForKids { get; set; } //Для детей
+        public bool Documentary { get; set; } //Документальные
+        public bool Dramas  { get; set; } //Драмы
+        public bool Foreign { get; set; } //Зарубежные
+        public bool Historical { get; set; } //Исторические
+        public bool Catastrophes { get; set; } //Катастрофы
+        public bool Comedy { get; set; } //Комедии
+        public bool Crime { get; set; } //Криминал
+        public bool Melodrama { get; set; } //Мелодрамы
+        public bool Mystical { get; set; } //Мистические
+        public bool Musical { get; set; } //Музыкальные
+        public bool ByComics { get; set; } //По комиксам
+        public bool Adventures { get; set; } //Приключения
+        public bool Russians { get; set; } //Русские
+        public bool Ukrainian { get; set; } //Украинские 
+        public bool Family { get; set; } //Семейные
+        public bool Soviet { get; set; } //Советские
+        public bool Sport { get; set; } //Спорт
+        public bool Thrillers { get; set; } //Триллеры
+        public bool Horror { get; set; } //Ужасы
+        public bool Fantasy { get; set; } //Фэнтези
     }
 }

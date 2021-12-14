@@ -1,10 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using WebMyCinema.ValidationAttributes;
 
 public class UserAccaunt
 {
-    
-    [Key]
     public int Id { get; set; }
 
     [Required]
@@ -15,11 +14,23 @@ public class UserAccaunt
     [EmailAddress]
     public string Email { get; set; }
 
-    public decimal Account { get; set; }//Счет
+    public string FullPhoneNumber { get; set; }
 
-    [CreditCard]
-    public string UserCreditCard { get; set; }// Банковсткая карта
+    [PhoneNumber]
+    [MaxLength(10)]
+    
+    public string PhoneNumber 
+    {
+        get{ return FullPhoneNumber; }
+        set
+        {
+            string CountryCode = "+38";
+            value += CountryCode;
+        }
+    } 
+    //Принимает 10 цифр, например 0931112233
+    public decimal Account { get; set; } //Денежный счет
 
 
-
+    
 }

@@ -1,11 +1,22 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 public class UserAuthorization
 {
     public string UserId { get; set; }
+
+    [Required]
+    [EmailAddress]
     public string Email { get; set; }
+
+    [Required]
     public string Password { get; set; }
-    //public string PasswordRepeat { get; set; }   ?
+
+
+
+
+
+
 
     public void SearchEmailInDataBase() //Поиск емейла/логина
     { }

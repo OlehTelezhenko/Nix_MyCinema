@@ -1,11 +1,12 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using WebMyCinema.ValidationAttributes;
 
 public class Cinema
 {
     [Required]
     [Key]
-    public int CimenaId { get; set; };
+    public int CimenaId { get; set; }
 
     [Required]
     [StringLength(20)]
@@ -14,13 +15,21 @@ public class Cinema
     [Required]
     public string CinemaAddress { get; set; }
 
+    [Required]
+    [MaxLength(2000)]
     public string AboutTheCinema { get; set; }
 
-    [Phone]//Переделать 
+    [Required]
+    [PhoneNumber]//Переделать 
     public string CinemaPhoneNumber { get; set; }
 
+    [Required]
     [Url]
     public string CinemaPhotography { get; set; }//фото кинотеатра
+
+
+
+
 
 
 
@@ -32,4 +41,5 @@ public class Cinema
 
     public void СinemaInfoEdit() //изменение данных
     { }
+
 }
