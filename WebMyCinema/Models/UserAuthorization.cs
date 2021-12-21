@@ -14,10 +14,6 @@ public class UserAuthorization
 
 
 
-
-
-
-
     public void SearchEmailInDataBase() //Поиск емейла/логина
     { }
 

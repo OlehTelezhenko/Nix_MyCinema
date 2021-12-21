@@ -6,8 +6,12 @@ public class Actor
     public int ActorId { get; set; }
 
     [Required]
-    [MaxLength(100), MinLength(2)]
-    public string FullName { get; set; } //кличка
+    [MaxLength(20), MinLength(2)]
+    public string FirstName { get; set; } 
+
+    [Required]
+    [MaxLength(20), MinLength(2)]
+    public string Surname { get; set; } 
 
     [MaxLength(2000)]
     public string BiographyOfTheActor { get; set; } //краткая био
@@ -16,22 +20,5 @@ public class Actor
     
     [Url]
     public string PhotoActor { get; set; } //фотография 
-
-
-
-
-
-
-    public void SearchForAnActor() //Поиск актера в бд
-    { }
-
-    public void AddNewAnActor() //добавить в базу
-    { }
-
-    public void EditingAnActor() //Редактирование 
-    { }
-
-    public void GetActorData() //Вывод инфы
-    { }
 
 }

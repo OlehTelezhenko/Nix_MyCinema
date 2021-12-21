@@ -27,19 +27,4 @@ public class Cinema
     [Url]
     public string CinemaPhotography { get; set; }//фото кинотеатра
 
-
-
-
-
-
-
-    public void AddNewCinema() //добавить кинотеатр
-    { }
-
-    public void CinemaInfo() //информация о кинотеатре
-    { }
-
-    public void СinemaInfoEdit() //изменение данных
-    { }
-
 }

@@ -18,19 +18,7 @@ public class UserAccaunt
 
     [PhoneNumber]
     [MaxLength(10)]
-    
-    public string PhoneNumber 
-    {
-        get{ return FullPhoneNumber; }
-        set
-        {
-            string CountryCode = "+38";
-            value += CountryCode;
-        }
-    } 
+    public string PhoneNumber { get; set; }
     //Принимает 10 цифр, например 0931112233
     public decimal Account { get; set; } //Денежный счет
-
-
-    
 }
