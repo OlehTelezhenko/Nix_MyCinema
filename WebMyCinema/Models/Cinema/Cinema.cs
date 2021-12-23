@@ -6,14 +6,14 @@ public class Cinema
 {
     [Required]
     [Key]
-    public int CimenaId { get; set; }
+    public int Id { get; set; }
 
     [Required]
     [StringLength(20)]
-    public string CinemaName { get; set; }
+    public string Name { get; set; }
 
     [Required]
-    public string CinemaAddress { get; set; }
+    public string Address { get; set; }
 
     [Required]
     [MaxLength(2000)]
@@ -25,6 +25,6 @@ public class Cinema
 
     [Required]
     [Url]
-    public string CinemaPhotography { get; set; }//фото кинотеатра
+    public string Photography { get; set; }//фото кинотеатра
 
 }

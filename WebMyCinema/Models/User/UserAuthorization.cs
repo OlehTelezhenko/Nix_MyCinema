@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 public class UserAuthorization
 {
-    public string UserId { get; set; }
+    public string Id { get; set; }
 
     [Required]
     [EmailAddress]

@@ -2,13 +2,13 @@
 using System.ComponentModel.DataAnnotations;
 using WebMyCinema.ValidationAttributes;
 
-public class UserAccaunt
+public class PersonalArea
 {
     public int Id { get; set; }
 
     [Required]
     [MaxLength(100), MinLength(2)]
-    public string FullUsername { get; set; }
+    public string Username { get; set; }
 
     [Required]
     [EmailAddress]
